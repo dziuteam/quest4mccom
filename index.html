@@ -8,20 +8,23 @@
   <meta name="keywords" content="zadanie zadanie rekrutacyjne rekrutacja">
   <meta name="author" content="Przemek Pamirski">
   <meta property="og:title" content="Zadanie Rekrutacyjne">
-  <meta property="og:image" content="images/2.jpg">
+  <meta property="og:image" content="image/mccom.png">
   <title>Test Task MCCOM</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<header>
-		<div class="logo">
-			<img src="image/mccom.png" alt="logo">
+	<header id="home">
+		<div class="container">
+			<div class="logo col-lg-4 col-md-6 col-xs-12">
+				<img src="image/mccom.png" alt="logo">
+			</div>
 		</div>
 	</header>
-<section id="home">
+<section id="finder">
 	<div class="container">
 		<div class="row">
-			<div class="col-12">
+			<div class="col-lg-6 text-left">
 				<h2>Szukaj Filmów</h2>
 				<form>
   			  <label>
@@ -29,26 +32,26 @@
     			</label>
     		<button>Szukaj</button>
 				</form>
+			</div
+			<div class="col-lg-6 text-right">
+				<h2>Wyniki wyszukiwania</h2>
+	 				<ul id="movies">
+						<p class="title">Title</p>
+    				<p class="plot">Plot</p>
+    				<span class="poster">Poster</span><br>
+    				<span class="year">Year</span>
+	 				</ul>
+				</div>
 			</div>
 		</div>
-	</div>
-	<div class="container">
-		<h2>Wyniki wyszukiwania</h2>
-	 		<ul id="movies">
-				<p class="title">Title</p>
-    		<p class="plot">Plot</p>
-    		<span class="poster">Poster</span><br>
-    		<span class="year">Year</span>
-	 		</ul>
-	</div>
 </section>
 <footer>
 		<div class="container">
 			<div class="row">
-				<div class="col-6">
+				<div class="col-lg-6 text-left">
 					<p>&copy; 2017 - All rights reserved.</p>
 				</div>
-				<div class="col-6">
+				<div class="col-lg-6 text-right">
 					<p>Made by Przemek Pamirski</p>
 				</div>
 			</div>

@@ -11,127 +11,57 @@
 	-o-transform: $transform
 	-webkit-transform: $transform
 
-$tlo-glowne: #FBF4F9
+$tlo-glowne: #EFEFEF
 
 *
 	box-sizing: border-box
-body
+html, body
+	height: 100%
+	background-color: $tlo-glowne
 	margin: 0
 	padding: 0
-	font-family: 'Open Sans', sans-serif
 
-.container
-	text-align: center
-	margin: 0 auto
-	width: 100%
-	max-width: 1200px
+#container
+	min-height: 100%
+	position: relative
 
-body
-	background-color: $tlo-glowne
+#home .logo
+	margin: 5px
+	padding: 5px
+
+#finder
+	background-image: url(../image/back2.png)
 	background-repeat: no-repeat
 	background-size: 100%
 	background-position: center top
+	height: 90%
+	padding: 10px
+	padding-bottom: 32px
 
-#home h2
-	font: 700 34px 'Raleway'
+#finder h2
+	color: #000
+	margin-top: 10px
+	font-size: 32px
+	font-family: "Raleway"
+	font-weight: 700
+
+#finder p
+	color: #000
+	font-size: 16px
+	font-family: "Raleway"
+	font-weight: 300
+
+footer
+	background-color: #262626
+	padding: 5px 0
+	position: absolute
+	bottom: 0
+	height: 32px
+	width: 100%
 
 footer div p
 	margin-bottom: 0
 	color: #B9B9B9
 	font-size: 16px
-	font-family: "Raleway"
-	font-weight: 300
-
-footer div.text-center p
-	font-size: 25px
 	font-family: "Pacifico"
-	font-weight: 400
-	transition: all 0.3s linear
-
-footer div.text-right p strong
-	color: #ff2b58
-
-footer div.text-right p a:visited, footer div.text-right p a:hover, footer div.text-right p a:active
-	color: #B9B9B9
-	text-decoration: none
-
-footer div.text-center p:hover
-	transform: scale(1.2)
-
-[class*="col-"]
-	float: left
-	min-height: 1px
-	height: auto
-	padding: 15px
-
-.col-1
-	width: 8.33%
-
-.col-2
-	width: 16.66%
-
-.col-3
-	width: 25%
-
-.col-4
-	width: 33.33%
-
-.col-5
-	width: 41.66%
-
-.col-6
-	width: 50%
-
-.col-7
-	width: 58.33%
-
-.col-8
-	width: 66.66%
-
-.col-9
-	width: 75%
-
-.col-10
-	width: 83.33%
-
-.col-11
-	width: 91.66%
-
-.col-12
-	width: 100%
-
-.col-offset-0
-	margin-left: 0
-
-.col-offset-1
-	margin-left: 8.33%
-
-.col-offset-2
-	margin-left: 16.66%
-
-.col-offset-3
-	margin-left: 25%
-
-.col-offset-4
-	margin-left: 33.33%
-
-.col-offset-5
-	margin-left: 41.66%
-
-.col-offset-6
-	margin-left: 50%
-
-.col-offset-7
-	margin-left: 58.33%
-
-.col-offset-8
-	margin-left: 66.66%
-
-.col-offset-9
-	margin-left: 75%
-
-.col-offset-10
-	margin-left: 83.33%
-
-.col-offset-11
-	margin-left: 91.66%
+	font-weight: 300

@@ -1,18 +1,18 @@
 var $Form = $('form'), $Movies = $('#movies');
 $Movies.hide();
 $Form.on('submit', function(movieFind){
-    var sUrl, sMovie, oData;
+    var searchUrl, searchMovie, responseData;
     movieFind.preventDefault();
-sMovie = $Form.find('input').val();
-    sUrl = 'https://www.omdbapi.com/?t=' + sMovie + '&type=movie&tomatoes=true'
-    $.ajax(sUrl, {
+searchMovie = $Form.find('input').val();
+    searchUrl = 'https://www.omdbapi.com/?t=' + searchMovie + '&type=movie&tomatoes=true'
+    $.ajax(searchUrl, {
         complete: function(p_oXHR, p_sStatus){
-            oData = $.parseJSON(p_oXHR.responseText);
-            console.log(oData);
-            $Movies.find('.title').text(oData.Title);
-            $Movies.find('.plot').text(oData.Plot);
-            $Movies.find('.poster').html('<img src="' + oData.Poster + '"/>');
-            $Movies.find('.year').text(oData.Year);
+            responseData = $.parseJSON(p_oXHR.responseText);
+            console.log(responseData);
+            $Movies.find('.title').text(responseData.Title);
+            $Movies.find('.plot').text(responseData.Plot);
+            $Movies.find('.poster').html('<img src="' + responseData.Poster + '"/>');
+            $Movies.find('.year').text(responseData.Year);
             $Movies.show();
         }
     });
