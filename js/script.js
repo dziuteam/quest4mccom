@@ -11,7 +11,12 @@ searchMovie = $Form.find('input').val();
             console.log(responseData);
             $Movies.find('.title').text(responseData.Title);
             $Movies.find('.plot').text(responseData.Plot);
+            // $Movies.find('.poster').html('<img src="' + responseData.Poster + '"/>');
+            if (responseData.Poster == "N/A") {
+            $('.poster').hide();
+            } else {
             $Movies.find('.poster').html('<img src="' + responseData.Poster + '"/>');
+            }
             $Movies.find('.year').text(responseData.Year);
             $Movies.show();
         }
