@@ -21,7 +21,12 @@ body {
 
 #home .logo {
   margin: 5px;
-  padding: 5px; }
+  padding: 5px;
+  background-color: #FFD93D;
+  border-top: 3px dotted #000;
+  border-bottom: 3px dotted #000;
+  box-shadow: inset 0 -1px 0 0 #000, inset 0 1px 0 0 #000, 0 1px 0 0 #000, 0 -1px 0 0 #000;
+  margin-bottom: 1px; }
 
 #finder {
   height: 90%;
@@ -30,20 +35,20 @@ body {
   flex: 1; }
 
 #finder {
-  color: #FFF;
+  color: #F3F3F3;
   margin-top: 30px;
   font-size: 28px;
   font-family: "Karla", sans-serif;
   font-weight: 700; }
 
 #finder p {
-  color: #FFF;
+  color: #F3F3F3;
   font-size: 16px;
   font-family: "Karla", sans-serif;
   font-weight: 300; }
 
 #finder .year {
-  color: #FFF;
+  color: #F3F3F3;
   font-size: 14px;
   font-family: "Karla", sans-serif;
   font-weight: 300; }
@@ -51,8 +56,15 @@ body {
 #movies {
   padding: 0; }
 
+.form-control {
+  background-color: #F3F3F3; }
+
 footer {
-  background-color: #262626;
+  border-top: 3px dotted #000;
+  border-bottom: 3px dotted #000;
+  box-shadow: inset 0 -1px 0 0 #000, inset 0 1px 0 0 #000, 0 1px 0 0 #000, 0 -1px 0 0 #000;
+  margin-bottom: 1px;
+  background-color: #1B2F61;
   padding: 5px 0;
   width: 100%; }
 
@@ -70,14 +82,14 @@ footer div p {
     margin: 0 auto; }
 
   #finder h2 {
-    color: #000;
+    color: #F3F3F3;
     margin-top: 30px;
     font-size: 20px;
     font-family: "Karla", sans-serif;
     font-weight: 700; }
 
   #finder p {
-    color: #000;
+    color: #F3F3F3;
     font-size: 14px;
     font-family: "Karla", sans-serif;
     font-weight: 300; } }
