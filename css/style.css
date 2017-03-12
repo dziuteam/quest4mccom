@@ -59,6 +59,9 @@ body {
 .form-control {
   background-color: #F3F3F3; }
 
+#movies .title {
+  font-size: 24px; }
+
 footer {
   border-top: 3px dotted #000;
   border-bottom: 3px dotted #000;
@@ -89,6 +92,7 @@ footer div p {
     font-weight: 700; }
 
   #finder p {
+    margin-top: 20px;
     color: #F3F3F3;
     font-size: 14px;
     font-family: "Karla", sans-serif;
