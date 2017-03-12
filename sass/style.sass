@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Pacifico")
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,700,800&subset=latin-ext")
+@import url('https://fonts.googleapis.com/css?family=Karla')
+@import url('https://fonts.googleapis.com/css?family=Roboto')
 =transition($transition)
 	-o-transition: $transition
 	-moz-transition: $transition
@@ -24,6 +24,7 @@ body
 	min-height: 100%
 	display: flex
 	flex-direction: column
+	background: radial-gradient(at bottom, #0096D6 12%, #00328F)
 
 #container
 	min-height: 100%
@@ -34,26 +35,28 @@ body
 	padding: 5px
 
 #finder
-	// background-image: url(../image/back2.png)
-	// background-repeat: no-repeat
-	// background-size: 100%
-	// background-position: center top
 	height: 90%
 	padding: 10px
 	padding-bottom: 32px
 	flex: 1
 
-#finder h2
-	color: #000
+#finder
+	color: #FFF
 	margin-top: 30px
 	font-size: 28px
-	font-family: "Raleway"
+	font-family: "Karla", sans-serif
 	font-weight: 700
 
 #finder p
-	color: #000
+	color: #FFF
 	font-size: 16px
-	font-family: "Raleway"
+	font-family: "Karla", sans-serif
+	font-weight: 300
+
+#finder .year
+	color: #FFF
+	font-size: 14px
+	font-family: "Karla", sans-serif
 	font-weight: 300
 
 #movies
@@ -69,7 +72,7 @@ footer div p
 	margin-bottom: 0
 	color: #B9B9B9
 	font-size: 16px
-	font-family: "Pacifico"
+	font-family: "Roboto", sans-serif
 	font-weight: 300
 
 @media screen and (max-width: 1199px)
@@ -82,11 +85,11 @@ footer div p
 		color: #000
 		margin-top: 30px
 		font-size: 20px
-		font-family: "Raleway"
+		font-family: "Karla", sans-serif
 		font-weight: 700
 
 	#finder p
 		color: #000
 		font-size: 14px
-		font-family: "Raleway"
+		font-family: "Karla", sans-serif
 		font-weight: 300
