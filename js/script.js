@@ -21,10 +21,12 @@ searchMovie = $Form.find('input').val();
             $Movies.find('.poster').html('<img src="' + responseData.Poster + '"/>');
             }
             $Movies.find('.year').text(responseData.Year);
+            $('.result').fadeOut();
             $False.hide();
             $Movies.show();
           }
           else {
+            $Movies.hide();
             $False.show();
           }
         }
